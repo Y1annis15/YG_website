@@ -185,6 +185,132 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Skills Section */}
+      <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-foreground mb-4">Skills</h2>
+            <p className="text-muted-foreground">Technical Expertise & Technologies</p>
+          </motion.div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <motion.div variants={fadeInUp}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Programming Languages</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {["C++", "Python", "JavaScript", "Java", "SQL", "Assembly", "Bash"].map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-sm">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Embedded Systems & UAV</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {["NVIDIA Jetson", "DJI OSDK", "DJI PSDK", "ROS", "TensorRT", "ONNX", "OpenCV"].map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-sm">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Machine Learning & AI</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {["TensorFlow", "Reservoir Computing", "Transformer Models", "Multi-task Learning", "Computer Vision", "State Estimation"].map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-sm">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Development Tools</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {["Git", "CMake", "Qt5", "Qt Designer", "VSCode", "Linux", "Docker"].map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-sm">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Web Technologies</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {["HTML", "CSS", ".NET", "HTTP", "WebSockets", "REST APIs"].map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-sm">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Specialized Knowledge</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {["EASA Regulations", "Risk Assessment", "UAS Operations", "Computer Architecture", "Cache Systems", "MIPS32"].map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-sm">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Experience Section */}
       <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
