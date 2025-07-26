@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yg-website.vercel.app/sitemap.xml 
+Sitemap: https://yiannisgrigoriou.vercel.app/sitemap.xml 

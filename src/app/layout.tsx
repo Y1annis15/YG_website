@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://yg-website.vercel.app'),
+  metadataBase: new URL('https://yiannisgrigoriou.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Yiannis Grigoriou - Software Engineer | Embedded Systems & UAV Specialist",
     description: "Software Engineer specializing in Embedded Software Development, UAV Systems, and Machine Learning. Currently working at KIOS Research and Innovation Center of Excellence in Cyprus.",
-    url: 'https://yg-website.vercel.app',
+    url: 'https://yiannisgrigoriou.vercel.app',
     siteName: 'Yiannis Grigoriou Portfolio',
     locale: 'en_US',
     type: 'website',
@@ -66,6 +66,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: '472ff9af5956d3fc',
+  },
 };
 
 export default function RootLayout({
@@ -76,6 +79,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="icon" type="image/png" href="/YG_Favicon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -110,7 +114,7 @@ export default function RootLayout({
                 "DJI OSDK"
               ],
               "email": "yiannisgrigoriou15@gmail.com",
-              "url": "https://yg-website.vercel.app",
+              "url": "https://yiannisgrigoriou.vercel.app",
               "sameAs": [
                 "https://linkedin.com/in/yiannis-grigoriou"
               ],
